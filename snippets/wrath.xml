@@ -91,6 +91,10 @@
   <!-- Support -->
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="wrath" />
 
+  <!-- Vendor Repos -->
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="wrath" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="wrath" />
+
   <!-- Clang From AOSIP -->
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1"  remote="github" revision="ten" />
 
