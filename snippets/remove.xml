@@ -103,6 +103,7 @@
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/apps/UnifiedEmail" />
 
   <!-- Frameworks Repos -->
   <remove-project name="platform/frameworks/av" />
