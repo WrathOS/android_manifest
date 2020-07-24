@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="wrath"
+          fetch="https://github.com/WrathOS/"
+          revision="ten" />
+
+  <remote name="wrath-devices"
+          fetch="https://github.com/WrathOS-Devices/" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
+  <remote name="wrath-gitlab"
+          fetch="https://gitlab.com/WrathOS"
+          revision="ten" />
+
+  <!-- General Repos -->
+  <project path="art" name="android_art" remote="wrath" />
+  <project path="bionic" name="android_bionic" remote="wrath" />
+  <project path="manifest" name="android_manifest" remote="wrath" />
+
+  <!-- Build Repos -->
+  <project path="build/make" name="android_build" groups="pdk" remote="wrath" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="wrath" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk,tradefed" remote="wrath" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="wrath" />
+
+  <!-- Device Repos -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="wrath" revision="ten" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="wrath" revision="ten" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="wrath" revision="ten" />
+
+  <!-- Wrath Repos -->
+  <project path="device/wrath/sepolicy" name="android_device_wrath_sepolicy" remote="wrath" />
+  <project path="hardware/wrath/interfaces" name="android_hardware_wrath_interfaces" remote="wrath" />
+  <project path="vendor/wrath" name="android_vendor_wrath" remote="wrath" />
+  <project path="vendor/Rage" name="android_vendor_Rage" remote="wrath" />
+
+  <!-- System Repos -->
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="wrath" />
+  <project path="system/core" name="android_system_core" remote="wrath" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="wrath" />
+  <project path="system/vold" name="android_system_vold" remote="wrath" />
+  <project path="system/netd" name="android_system_netd" remote="wrath" />
+
+  <!-- Packages Repos -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="wrath" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="wrath" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="wrath" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="wrath" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="wrath" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="wrath" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PermissionController" remote="wrath" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="wrath" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="wrath" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="wrath" />
+  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" remote="wrath" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="wrath" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="wrath" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="wrath" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="wrath" />
+
+  <!-- Frameworks Repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="wrath" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="wrath" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="wrath" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="wrath" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="wrath" />
+
+  <!-- External Repos -->
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="wrath" />
+  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="wrath" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="wrath" />
+
+  <!-- Support -->
+  <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="wrath" />
+
+  <!-- Clang From AOSIP -->
+  <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1"  remote="github" revision="ten" />
+
+</manifest>
