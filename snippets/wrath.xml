@@ -51,6 +51,7 @@
   <project path="hardware/wrath/interfaces" name="android_hardware_wrath_interfaces" remote="wrath" />
   <project path="vendor/wrath" name="android_vendor_wrath" remote="wrath" />
   <project path="vendor/Rage" name="android_vendor_Rage" remote="wrath" />
+  <project path="vendor/gapps" name="android_vendor_gapps" remote="wrath-gitlab" />
 
   <!-- System Repos -->
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="wrath" />
