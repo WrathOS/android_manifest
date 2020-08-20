@@ -45,7 +45,8 @@
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="wrath" revision="ten" />
   <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="wrath" revision="ten" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="wrath" revision="ten" />
-
+  <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="wrath" revision="ten" />
+  
   <!-- Wrath Repos -->
   <project path="device/wrath/sepolicy" name="android_device_wrath_sepolicy" remote="wrath" />
   <project path="hardware/wrath/interfaces" name="android_hardware_wrath_interfaces" remote="wrath" />
