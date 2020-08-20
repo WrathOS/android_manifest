@@ -79,6 +79,7 @@
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="wrath" />
   <project path="packages/apps/WrathSettings" name="android_packages_apps_WrathSettings" remote="wrath" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="wrath" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="wrath" />
   
   <!-- Frameworks Repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="wrath" />
