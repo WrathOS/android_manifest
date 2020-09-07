@@ -36,6 +36,16 @@ make bacon
 ```
 -----------------------------------------------------------------------------
 
+Contributing
+====================
+
+[![Crowdin](https://badges.crowdin.net/wrathos/localized.svg)](https://crowdin.com/project/wrathos)  
+
+You can contribute to our project and translate it on [**Crowdin**](https://crowdin.com/project/wrathos/)!  
+
+We are also welcome to see any pull requests!
+-----------------------------------------------------------------------------
+
 Credits:
 =======
  * [**AOSP**](https://android.googlesource.com)
