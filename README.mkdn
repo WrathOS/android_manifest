@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/WrathOS/Wrath_Extras/blob/master/Banner_1.png" > 
+ <img src="https://github.com/WrathOS/wrath_extras/blob/master/banner01.png" > 
 </p>
 
 -----------------------------------------------------------------------------
